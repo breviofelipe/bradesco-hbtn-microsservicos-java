@@ -1,0 +1,16 @@
+O Spring Boot é um framework open source desenvolvido pela equipe do Spring com o objetivo de simplificar o processo de criação de aplicações Java baseadas no Spring.
+Ele elimina grande parte da configuração manual e do código boilerplate, permitindo que desenvolvedores foquem na lógica de negócio da aplicação.
+
+Entre os principais benefícios do Spring Boot estão a inicialização rápida de projetos, configuração automática (auto-configuration),
+servidor embutido (como Tomcat ou Jetty), monitoramento e métricas integrados, além de suporte a testes.
+
+A adição de novas dependências no Spring Boot é feita de maneira simples, geralmente por meio do arquivo de configuração de dependências,
+como o pom.xml (Maven) ou build.gradle (Gradle). Basta adicionar a dependência desejada, como Spring Data JPA ou Hibernate,
+e o Spring Boot se encarrega de configurar automaticamente os componentes necessários, reduzindo o esforço manual.
+
+Sobre a escolha da melhor IDE para trabalhar com Spring Boot, todas as opções citadas oferecem suporte ao framework.
+O Spring Tools Suite é uma versão do Eclipse customizada para o desenvolvimento Spring, trazendo ferramentas específicas que facilitam a criação e
+manutenção de projetos Spring Boot.
+
+O Spring Initializr é uma ferramenta online que auxilia na criação de projetos Spring Boot de forma rápida e personalizada. Por meio de uma interface web, o desenvolvedor pode selecionar as dependências desejadas, definir o nome do projeto, o tipo de build (Maven ou Gradle) e outras configurações. Ao final,
+o Spring Initializr gera um projeto pronto para ser importado na IDE, agilizando o início do desenvolvimento.
