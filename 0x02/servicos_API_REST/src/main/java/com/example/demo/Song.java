@@ -10,17 +10,6 @@ public class Song {
     private String album;
     private String anoLancamento;
 
-    public Song(){
-
-    }
-
-    public Song(Integer id, String nome, String artista, String album, String anoLancamento) {
-        this.id = id;
-        this.nome = nome;
-        this.artista = artista;
-        this.album = album;
-        this.anoLancamento = anoLancamento;
-    }
 
     public Integer getId() {
         return id;
@@ -59,6 +48,18 @@ public class Song {
     }
 
     public void setAnoLancamento(String anoLancamento) {
+        this.anoLancamento = anoLancamento;
+    }
+
+    public Song() {
+
+    }
+
+    public Song(Integer id, String nome, String artista, String album, String anoLancamento) {
+        this.id = id;
+        this.nome = nome;
+        this.artista = artista;
+        this.album = album;
         this.anoLancamento = anoLancamento;
     }
 
