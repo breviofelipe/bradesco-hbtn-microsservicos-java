@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Objects;
+
 public class Song {
 
     private Integer id;
@@ -7,6 +9,18 @@ public class Song {
     private String artista;
     private String album;
     private String anoLancamento;
+
+    public Song(){
+
+    }
+
+    public Song(Integer id, String nome, String artista, String album, String anoLancamento) {
+        this.id = id;
+        this.nome = nome;
+        this.artista = artista;
+        this.album = album;
+        this.anoLancamento = anoLancamento;
+    }
 
     public Integer getId() {
         return id;
@@ -46,5 +60,28 @@ public class Song {
 
     public void setAnoLancamento(String anoLancamento) {
         this.anoLancamento = anoLancamento;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Song song = (Song) o;
+        return Objects.equals(id, song.id) && Objects.equals(nome, song.nome) && Objects.equals(artista, song.artista) && Objects.equals(album, song.album) && Objects.equals(anoLancamento, song.anoLancamento);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nome, artista, album, anoLancamento);
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", artista='" + artista + '\'' +
+                ", album='" + album + '\'' +
+                ", anoLancamento='" + anoLancamento + '\'' +
+                '}';
     }
 }
