@@ -25,7 +25,7 @@ public class Cliente {
     private List<Telefone> telefones = new ArrayList<>();
     
     @OneToOne(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Endereco endereco;
+    private List<Endereco> endereco;
     
     // Construtores
     public Cliente() {}

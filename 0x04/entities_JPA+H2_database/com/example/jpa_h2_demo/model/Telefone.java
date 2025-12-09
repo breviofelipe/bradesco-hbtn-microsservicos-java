@@ -1,5 +1,7 @@
 package com.example.jpa_h2_demo.model;
 
+import jakarta.persistence.*;
+
 @Entity
 @Table(name = "telefones")
 public class Telefone {

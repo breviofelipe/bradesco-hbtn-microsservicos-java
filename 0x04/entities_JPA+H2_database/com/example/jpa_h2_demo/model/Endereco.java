@@ -1,9 +1,12 @@
 package com.example.jpa_h2_demo.model;
+
+import jakarta.persistence.*;
+
 @Entity
 @Table(name = "enderecos")
 public class Endereco {
     
-    @Id
+        @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
         
@@ -25,7 +28,7 @@ public class Endereco {
         @Column(nullable = false)
         private String estado;        
         
-        @OneToOne(fetch = FetchType.LAZY)
+        @ManyToOne(fetch = FetchType.LAZY)
         @JoinColumn(name = "cliente_id", nullable = false)
         private Cliente cliente;
         
