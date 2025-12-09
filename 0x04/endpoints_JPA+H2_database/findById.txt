@@ -3,7 +3,7 @@
     "idade": 26,
     "nome": "Manoel Antunes",
     "email": "manoel@email.com",
-    "telefones": [
+    "telefone": [
         {
             "id": 1,
             "numero": "35445585",
