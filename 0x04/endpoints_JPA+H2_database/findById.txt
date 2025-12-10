@@ -1,7 +1,7 @@
 {
     "id": 2,
-    "idade": 26,
     "nome": "Manoel Antunes",
+    "idade": 26,
     "email": "manoel@email.com",
     "telefones": [
         {
