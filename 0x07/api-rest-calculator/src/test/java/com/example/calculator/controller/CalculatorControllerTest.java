@@ -17,14 +17,14 @@ public class CalculatorControllerTest {
     private MockMvc mvc;
 
         @Test
-    void shouldReturnWelcomeMessage() throws Exception {
+    void welcomeMessage() throws Exception {
         mvc.perform(get("/calculator/welcome"))
                .andExpect(status().isOk())
                .andExpect(content().string("Bem vindo à CALCULATOR API REST."));
     }
 
     @Test
-    void shouldAddNumbers() throws Exception {
+    void addNumbers() throws Exception {
         mvc.perform(get("/calculator/addNumbers")
                 .param("number1", "2")
                 .param("number2", "3"))
@@ -33,7 +33,7 @@ public class CalculatorControllerTest {
     }
 
     @Test
-    void shouldSubtractNumbers() throws Exception {
+    void subtractNumbers() throws Exception {
         mvc.perform(get("/calculator/subNumbers")
                 .param("number1", "10")
                 .param("number2", "4"))
@@ -42,7 +42,7 @@ public class CalculatorControllerTest {
     }
 
     @Test
-    void shouldDivideNumbers() throws Exception {
+    void divideNumbers() throws Exception {
         mvc.perform(get("/calculator/divideNumbers")
                 .param("number1", "12")
                 .param("number2", "3"))
@@ -51,7 +51,7 @@ public class CalculatorControllerTest {
     }
 
     @Test
-    void shouldCalculateFactorial() throws Exception {
+    void calculateFactorial() throws Exception {
         mvc.perform(get("/calculator/factorial")
                 .param("factorial", "5"))
                .andExpect(status().isOk())
@@ -59,7 +59,7 @@ public class CalculatorControllerTest {
     }
 
     @Test
-    void shouldCalculateDaysBetweenDates() throws Exception {
+    void calculateDaysBetweenDates() throws Exception {
         mvc.perform(get("/calculator/calculeDayBetweenDate")
                 .param("localDate1", "2024-01-01")
                 .param("localDate2", "2024-01-10"))
@@ -68,7 +68,7 @@ public class CalculatorControllerTest {
     }
 
     @Test
-    void shouldConvertIntegerToBinary() throws Exception {
+    void convertIntegerToBinary() throws Exception {
         mvc.perform(get("/calculator/integerToBinary")
                 .param("number1", "10"))
                .andExpect(status().isOk())
@@ -76,7 +76,7 @@ public class CalculatorControllerTest {
     }
 
     @Test
-    void shouldConvertIntegerToHexadecimal() throws Exception {
+    void convertIntegerToHexadecimal() throws Exception {
         mvc.perform(get("/calculator/integerToHexadecimal")
                 .param("number1", "255"))
                .andExpect(status().isOk())
