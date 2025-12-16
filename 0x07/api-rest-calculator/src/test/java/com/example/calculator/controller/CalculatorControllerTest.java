@@ -17,7 +17,7 @@ public class CalculatorControllerTest {
     private MockMvc mvc;
 
         @Test
-    void welcomeMessage() throws Exception {
+    void messageWelcome() throws Exception {
         mvc.perform(get("/calculator/welcome"))
                .andExpect(status().isOk())
                .andExpect(content().string("Bem vindo à CALCULATOR API REST."));
